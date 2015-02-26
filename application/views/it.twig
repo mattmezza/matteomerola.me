@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  {% set css = app.url ~ '/public/css' %}
+  {% set js = app.url ~ '/public/js' %}
+  {% set img = app.url ~ '/public/img' %}
+  {% set assets = app.url ~ '/public/assets' %}
+  <!--- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>{{app.name}}</title>
+  <meta name="description" content="">
+  <meta name="author" content="{{app.author}}">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="{{css}}/default.css">
+   <link rel="stylesheet" href="{{css}}/style.css">
+   <link rel="stylesheet" href="{{css}}/responsive.css">
+   <link rel="stylesheet" href="{{css}}/animate.css">
+   <link rel="stylesheet" href="{{css}}/magnific-popup.css">
+   <link rel="stylesheet" href="{{assets}}/owl-carousel/owl.carousel.css">
+   <link rel="stylesheet" href="{{assets}}/owl-carousel/owl.theme.css">
+
+   <!-- Script
+   ================================================== -->
+  <script src="{{js}}/modernizr.js"></script>
+
+   <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div><!--preloader end-->
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="m-nav">
+
+         <a class="mobile-btn" href="#m-nav" title="Show navigation">Mostra menù</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Nascondi menù</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">Su di me</a></li>
+            <li><a class="smoothscroll" href="#resume">Curriculum</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+            <li><a class="smoothscroll" href="#contact">Contatti</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline wow zoomIn">Ciao, sono <span>Matteo</span></h1>
+            <h3 class="wow fadeInUp">
+              Mi piace aiutare le persone a raggiungere i loro obiettivi con il massimo risultato e il minimo sforzo. Credo nel software <span>Open Source</span> e cerco sempre di mettermi in gioco per rendere migliori lo <span>sviluppo di software</span> e i prodotti software in generale. Mi piace <span>progettare</span>, <span>sviluppare</span> e <span>manutenere</span> grossi sistemi software. Quello che mi rende davvero felice e soddisfatto è vedere le persone utilizzare quello che creo.
+                <br>Scopri di più <a class="smoothscroll" href="#about">su di me</a>.</h3>
+            <hr />
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="fa fa-angle-double-down"></i></a>
+      </p>
+
+      <div class="header-overlay"></div>
+
+   <!-- Social Section
+   ================================================== -->
+   <div id="social">
+      <div class="row social-container">
+            <ul class="social">
+               <li><a href="https://facebook.com/matteo.merola"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/_mattmezza_"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/+MatteoMerola"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://linkedin.com/in/matteomerola/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/mattmezza"><i class="fa fa-github"></i></a></li>
+               <li><a href="skype:facebook:matteo.merola"><i class="fa fa-skype"></i></a></li>
+            </ul>
+      </div>
+
+   </div> <!-- Social End -->
+
+   </header> <!-- Header End -->
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row bio-container">
+        <div class="twelve columns bio-inner">
+         <div class="six columns bio-left">
+         <div class="pp-container">
+
+            <img class="profile-pic wow zoomIn"  src="{{img}}/matt.jpg" alt="" />
+              <h2>Matteo Merola</h2>
+              <h3>Software Developer</h3>
+            </div> <!-- Profile Picture -->
+         </div>
+
+
+         <div class="six columns main-col wow fadeIn">
+          <div class="arrow-left"></div>
+
+            <blockquote>“Io penso che se fai qualcosa e risulta abbastanza buona, dovresti andare avanti a fare qualcosa di meraviglioso, non aspettare troppo. Pensa solo alla prossima cosa.”
+            <cite>Steve Jobs, 25 Maggio 2006</cite>
+            </blockqoute>
+
+          <div class="row">
+            <div class="six columns download">
+                <p>
+                  <a href="#contact" class="button"><i class="fa fa-paper-plane"></i>Contattami</a>
+                  <!-- <a href="{{assets}}/files/resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i>Scarica il CV</a> -->
+                </p>
+            </div> <!-- Download Buttons -->
+      </div>
+
+         </div> <!-- end .main-col -->
+      </div>
+      </div>
+
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+    <h1 class="section-title wow fadeInDown">Curriculum</h1>
+      <!-- Education
+      =============================================== -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h2><span>Istruzione</span></h2>
+         </div>
+
+      <div class="nine columns main-col">
+         <div class="education-timeline">
+            <ul class="timeline wow fadeInUp">
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">Settembre 2014 - presente</p>
+                  <h3>Università degli Studi di Salerno</h3>
+                  <h4>Laurea Specialistica</h4>
+                  <p><strong>Tecnologie Informatiche e Management</strong><br>
+                    Frequenza di corsi come Management e Control Systems, Data Management, Project Management e Service Management, Service for complexity e Sustainability Management, Analisi Finanziaria, Multimedia e Digital Forensics, Analisi dei processi organizzativi e Quality systems.
+                  </p>
+                </div>
+              </li>
+              <!-- <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">September 2013 - August 2014</p>
+                  <h3>University of Salerno</h3>
+                  <h4>Master's Degree (1 of 2 years)</h4>
+                  <p><strong>Computer Science</strong><br>
+                      Attended one year of two obteining awesome results (then I switched to Management and Information Technology 😉 ). Attended and completed exams like Advanced Software Engineering, Advanced Databases, Advanced Algorithms, Artificial and Computational Intelligence, Fundamentals of Artificial Vision.
+                  </p>
+                </div>
+              </li> -->
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">Settembre 2009 - Aprile 2013</p>
+                  <h3>Università degli Studi del Molise</h3>
+                  <h4>Laurea Triennale</h4>
+                  <p><strong>Informatica</strong><br>
+                    Laurea magna cum laude discutendo una tesi intitolata "Tecniche di segmentazione e di fusione multimodale di immagini biomedicali". Frequenza e superamento di esami come Basi di dati, Linguaggi di Programmazione, Calcolo Numerico, Statistica e Probabilità, Ingegneria del Software, Sviluppo di Software Multimediale.
+                  </p>
+                </div>
+              </li>
+              <!-- <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">September 2008 - August 2009</p>
+                  <h3>University of Cassino</h3>
+                  <h4>Bachelor's Degree (1 of 3 years)</h4>
+                  <p><strong>Mechanical Engineering</strong><br>
+                      Attended one year of three obteining awesome results (then I switched to Computer Science 😉 ). Attended and completed exams like Mechanical Machine Design, Applied Chemistry, Chemistry, Fundamentals of Informatics.
+                  </p>
+                </div>
+              </li> -->
+              <!-- <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">January 2001 - June 2008</p>
+                  <h3>School of Amusement</h3>
+                  <h4>O Level</h4>
+                  <p><strong>Grade A++</strong><br>
+                     Completed O Level from College of Amusement with and finished O Level with A++. Achieved the Principal Award for extra-ordinary result.</p>
+                </div>
+              </li> -->
+            </ul>
+         </div> <!-- Education Timeline End -->
+      </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ========================================= -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h2><span>Esperienza</span></h2>
+         </div>
+
+         <div class="nine columns main-col">
+
+         <div class="work-timeline">
+            <ul class="timeline">
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">Febbraio 2015 - Presente</p>
+                  <h3><a href="http://www.unisa.it" target="_BLANK">Università degli Studi di Salerno</a></h3>
+                  <h4>Borsista</h4>
+                  <p>Ricerca e analisi prestazionale di device mobili in contesti di realtà aumentata e mista sia outdoor che indoor.</p>
+                </div>
+              </li>
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">Novembre 2013 - Novembre 2014</p>
+                  <h3><a href="http://www.unimol.it" target="_BLANK">Università degli Studi del Molise</a></h3>
+                  <h4>Borsista</h4>
+                  <p>Design, analisi e sviluppo di un software che implementa una tecnica di fusione e co-registrazione per immagini biomedicali multimodali.</p>
+                </div>
+              </li>
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">Settembre 2012 - Gennaio 2013</p>
+                  <h3><a href="http://www.neuromed.it" target="_BLANK">I.N.M. Neuromed</a></h3>
+                  <h4>Tirocinante</h4>
+                  <p>Assistente amministratore di sistema e tirocinante presso l'ufficio di Ingegneria Biomedica.</p>
+                </div>
+              </li>
+            </ul>
+         </div> <!-- Work Timeline End -->
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      =============================================== -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h2><span>Skill</span></h2>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>Sono una persona molto curiosa e ho molti interessi ma il percorso che mi ha portato dove sono adesso ha fatto sì che io sviluppassi in pparticolare le seguenti competenze:</p>
+
+        <div class="bars">
+
+           <ul class="skills">
+            <li><span class="bar-expand programming wow fadeInLeft"></span><em>Programmazione</em></li>
+            <li><span class="bar-expand project-management wow fadeInLeft"></span><em>Project Management</em></li>
+            <li><span class="bar-expand service-management wow fadeInLeft"></span><em>Service Management</em></li>
+            <li><span class="bar-expand web wow fadeInLeft"></span><em>Web</em></li>
+            <li><span class="bar-expand cms wow fadeInLeft"></span><em>CMS</em></li>
+            <li><span class="bar-expand sysadmin wow fadeInLeft"></span><em>Amministrazione di Sistema</em></li>
+          </ul>
+
+        </div><!-- end skill-bars -->
+
+      </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+      <!-- Awards
+      =============================================== -->
+      <div class="row awards">
+
+         <div class="three columns header-col">
+            <h2><span>Certificazioni</span></h2>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>Sono abbastanza bravo nel fare le cose e nel raggiungere gli obiettivi che mi pongo XD ma questi che seguono sono i principali risultati che ho raggiunto:</p>
+
+        <div class="award-list">
+
+           <ul>
+             <li class="wow fadeIn">
+                <span><i class="fa fa-trophy fa-5x pull-left fa-fw"></i></span>
+                <h3><a href="http://biplab.unisa.it/vismac2014/home.html" target="_BLANK">Scuola Estiva sulla Computer Vision</a></h3>
+                <h5>Frequenza e superamento esame finale (<a href="{{assets}}/files/vismac.pdf">certificate</a>).</h5>
+                <h4>Giugno 2014, Ascea, Italia</h4>
+             </li>
+             <!-- <li class="wow fadeIn">
+                <span><i class="fa fa-trophy fa-5x pull-left fa-fw"></i></span>
+                <h3>Best Front-End Developers Award</h3>
+                <h5>Top Front-End Developer</h5>
+                <h4>San Fransisco, USA</h4>
+             </li>
+             <li class="wow fadeIn">
+                <span><i class="fa fa-trophy fa-5x pull-left fa-fw"></i></span>
+                <h3>Awesome UI/UX Designers Award</h3>
+                <h5>Best UI/UX Designer</h5>
+                <h4>New York, USA</h4>
+             </li> -->
+             <li class="wow fadeIn">
+                <span><i class="fa fa-microphone fa-5x pull-left fa-fw"></i></span>
+                <h3><a href="http://www.aicanet.it/eventicontestuali/2013/subscribableevent.2013-05-23.8591772586" target="_BLANK">50esimo Congresso AICA</a></h3>
+                <h5>Presentatore</h5>
+                <h4>Settembre 2013, Fisciano, Italia</h4>
+             </li>
+
+          </ul>
+
+        </div><!-- end awards list -->
+
+      </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1 class="section-title wow fadeInDown">Alcuni dei lavori che ho fatto</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#MyUnimol" title="">
+                        <img alt="MyUnimol" src="{{img}}/MyUnimol-s.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>MyUnimol</h5>
+                              <p>WebApp</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#hotelriggioni" title="">
+                        <img alt="" src="{{img}}/hotelriggioni-s.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Hotel Riggioni</h5>
+                              <p>Website</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#remolic" title="">
+                        <img alt="remolic logo" src="{{img}}/remolic-s.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Remolic</h5>
+                              <p>Website</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#studioriggioni" title="">
+                        <img alt="" src="{{img}}/studioriggioni-s.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Studio Riggioni</h5>
+                              <p>Website</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div>
+
+               <!-- <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="http://placehold.it/300x300">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Portfolio Title</h5>
+                              <p>Branding</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="http://placehold.it/300x300">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Portfolio Title</h5>
+                              <p>Photography</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="http://placehold.it/300x300">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                         <h5>Portfolio Title</h5>
+                              <p>Illustration</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="http://placehold.it/300x300">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                          <h5>Portfolio Title</h5>
+                              <p>Web Development</p>
+                       </div>
+                        </div>
+                        <div class="link-icon"><i class="fa fa-plus fa-2x"></i></div>
+                     </a>
+
+                  </div>
+              </div> -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+        =============================================== -->
+
+         <div id="MyUnimol" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{{img}}/MyUnimol.jpg" alt="MyUnimol" />
+
+          <div class="description-box">
+            <h4>MyUnimol</h4>
+            <p>MyUnimol è una WebApp che estrae i dati relativi agli esami e alla carriera degli studenti dell'<a href="http://www.unimol.it" target="_BLANK">Università degli Studi del Molise</a> tramite il portale Esse3. Tutta la WebApp è completamente ottimizzata per il mobile. Ho lavorato con un team composto da 4 persone che hanno gestito un team distribuito di 12 sviluppatori. Io e i miei fantastici amici Carlo, Giovanni e Simone abbiamo gestito e integrato il progetto con successo.</p>
+               <span class="categories"><i class="fa fa-tag"></i>WebApp, Mobile</span>
+          </div>
+
+            <div class="link-box">
+               <a href="https://teammolise.rocks/MyUnimol" class="button">Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Chiudi</a>
+            </div>
+
+        </div><!-- modal-01 End -->
+
+         <div id="hotelriggioni" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{{img}}/hotelriggioni.jpg" alt="hotel riggioni" />
+
+          <div class="description-box">
+            <h4>Hotel Riggioni</h4>
+            <p>Sito web per un hotel. Sviluppo frontend e backend. Realizzato con PHP e Zend Framework.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Zend Framework, Web Development</span>
+          </div>
+
+            <div class="link-box">
+               <a href="http://www.hotelriggioni.com" class="button">Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Chiudi</a>
+            </div>
+
+        </div><!-- modal-02 End -->
+
+         <div id="remolic" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{{img}}/remolic.jpg" alt="remolic" />
+
+          <div class="description-box">
+            <h4>Remolic</h4>
+            <p>Sito web per il progetto inter-regionale Remolic. Installazione e personalizzazione di Wordpress.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Design, Wordpress</span>
+          </div>
+
+            <div class="link-box">
+               <a href="http://remolic.net" class="button">Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Chiudi</a>
+            </div>
+
+        </div><!-- modal-03 End -->
+
+         <div id="studioriggioni" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="{{img}}/studioriggioni.jpg" alt="studioriggioni" />
+
+          <div class="description-box">
+            <h4>Studio Riggioni</h4>
+            <p>Sviluppo frontend e backend utilizzando Wordpress come CMS.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Website, Wordpress</span>
+          </div>
+
+            <div class="link-box">
+               <a href="http://www.studioriggioni.it" class="button">Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Chiudi</a>
+            </div>
+
+        </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="http://placehold.it/640x427" alt="" />
+
+          <div class="description-box">
+            <h4>This is title</h4>
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+          </div>
+
+            <div class="link-box">
+               <a href="#" class="button">Live Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+
+        </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="http://placehold.it/640x427" alt="" />
+
+          <div class="description-box">
+            <h4>This is title</h4>
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+          </div>
+
+            <div class="link-box">
+               <a href="#" class="button">Live Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+
+        </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="http://placehold.it/640x427" alt="" />
+
+          <div class="description-box">
+            <h4>This is title</h4>
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+          </div>
+
+            <div class="link-box">
+               <a href="#" class="button">Live Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+
+        </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+          <img class="scale-with-grid" src="http://placehold.it/640x427" alt="" />
+
+          <div class="description-box">
+            <h4>This is title</h4>
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+          </div>
+
+            <div class="link-box">
+               <a href="#" class="button">Live Demo</a>
+             <a class="popup-modal-dismiss button btn-close">Close</a>
+            </div>
+
+        </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+            <h1 class="wow fadeInLeft">
+              <span><i class="fa fa-paper-plane fa-5x pull-left fa-fw"></i></span>
+            </h1>
+         </div>
+
+         <div class="seven columns">
+            <h2 class="wow zoomIn">Vuoi metterti in contatto con me???</h2>
+            <p>Sono disponibile per progetti Freelance secondo il loro valore. Contattami, anche solo per un saluto o uno scambio di opinioni!</p>
+
+         </div>
+
+         <div class="three columns action wow fadeIn">
+
+            <a href="#contact" class="button">Contattami</a>
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <!-- <section id="testimonials">
+      <div class="text-container">
+         <div class="row">
+          <div class="twelve columns flex-container">
+            <h1 class="section-title wow fadeInDown">Client Testimonials</h1>
+
+            <div id="testimonial-slides" class="owl-carousel">
+              <div>
+                <blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                 <cite> Jonathan Doe</cite>
+              </blockquote>
+              </div>
+
+              <div>
+                <blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                 <cite> Jane Doe</cite>
+              </blockquote>
+              </div>
+
+              <div>
+                <blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                 <cite> John Doe</cite>
+              </blockquote>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+   </section>  -->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-head">
+          <div class="twelve columns">
+              <h1 class="section-title wow fadeInDown">Contattami</h1>
+              <p class="lead">Vivo in Molise, in una piccola cittadina. Trovi un segnaposto sulla mappa a lato! Puoi trovarmi con più facilità sul web.</p>
+          </div>
+      </div> <!-- Section head -->
+
+      <div class="row">
+          <div class="five columns">
+             <div class="form-container wow fadeIn">
+               <!-- form -->
+
+               <form action="{{app.url}}/sendmail" method="post" id="contactForm" name="contactForm">
+                  <fieldset>
+
+                        <div>
+                     <input type="text" placeholder="Nome" value="" size="35" id="contactName" name="contactName">
+                        </div>
+
+                        <div>
+                     <input type="text" placeholder="Email" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+
+                        <div>
+                     <input type="text" placeholder="Oggetto" value="" size="35" id="contactSubject" name="contactSubject">
+                        </div>
+
+                        <div>
+                           <textarea cols="5" rows="5" placeholder="Messaggio" id="contactMessage" name="contactMessage"></textarea>
+                        </div>
+
+                        <div>
+                         <!-- contact-warning -->
+                         <div id="message-warning"> Errore ragazzo</div>
+                           <button class="submit">Invia</button>
+                           <span id="image-loader">
+                              <img alt="" src="{{img}}/loader.gif">
+                           </span>
+                        </div>
+
+                 </fieldset>
+                </form> <!-- Form End -->
+                         <!-- contact-success -->
+                         <div id="message-success">
+                                <i class="fa fa-check"></i>Il tuo messaggio è stato inviato, grazie mille!<br>
+                         </div>
+            </div>  <!-- Form Container End -->
+
+          </div>
+
+      <div class="seven columns">
+<!--         <h1><span>Find me on Google Map</span></h1> -->
+         <!-- Start Google Map -->
+         <div id="map"></div>
+         <!-- End -->
+      </div> <!-- Row ends-->
+
+
+      </div> <!-- Row ends-->
+
+
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://facebook.com/matteo.merola"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/_mattmezza_"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://plus.google.com/+MatteoMerola"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://linkedin.com/in/matteomerola/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/mattmezza"><i class="fa fa-github"></i></a></li>
+               <li><a href="skype:facebook:matteo.merola"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>Matteo Merola &copy; Copyright {{ "now"|date('Y') }}, Tutti i diritti riservati</li>
+
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fa fa-chevron-up"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+
+   <script src="{{js}}/jquery-2.1.1.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+   <script src="{{js}}/gmaps.js"></script>
+   <script src="{{assets}}/owl-carousel/owl.carousel.min.js"></script>
+   <script src="{{js}}/waypoints.js"></script>
+   <script src="{{js}}/jquery.fittext.js"></script>
+   <script src="{{js}}/magnific-popup.js"></script>
+   <script src="{{js}}/wow.min.js"></script>
+   <script src="{{js}}/jquery.nicescroll.min.js"></script>
+   <script src="{{js}}/script.js"></script>
+
+</body>
+
+</html>
