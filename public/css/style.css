@@ -790,6 +790,13 @@ ul#nav li a:hover {
   	-webkit-animation: sysadmin 2s ease;
 }
 
+.biometrics {
+  background: #ffd600;
+  	width: 80%;
+  	-moz-animation: sysadmin 2s ease;
+  	-webkit-animation: sysadmin 2s ease;
+}
+
 @-moz-keyframes programming {
   0%   { width: 0px;  }
   100% { width: 100%;  }
