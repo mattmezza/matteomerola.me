@@ -207,12 +207,12 @@ function parallax() {
 
     // main directions
       map = new GMaps({
-        el: '#map', lat: 41.5128801, lng: 14.054473199999961, zoom: 13, zoomControl : true,
+        el: '#map', lat: 52.551194, lng: 13.367014, zoom: 13, zoomControl : true,
         zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, panControl : false, scrollwheel: false
       });
     // add address markers
-    map.addMarker({ lat: 41.5128801, lng: 14.054473199999961, title: 'Matteo Merola',
-      infoWindow: { content: '<p>Via della Vergine, 98, 86077 Pozzilli, Isernia, Italia</p>' } });
+    map.addMarker({ lat: 52.551194, lng: 13.367014, title: 'Matteo Merola',
+      infoWindow: { content: '<p>Schulstraße 102, 13347 Berlin, Germany</p>' } });
 
 /*----------------------------------------------------*/
 /*	contact form
