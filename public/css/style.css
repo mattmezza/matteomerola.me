@@ -1413,3 +1413,44 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 
 #go-top a:hover { background-color: #0F9095; }
+
+#important-notice {
+  background-color: #00ACAF;
+  color: #fff;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 0;
+  height: 20px;
+  display: block;
+  position: fixed;
+  top: -20px;
+  z-index: 9999999;
+  width: 100%;
+}
+
+#important-notice p {
+  position: relative;
+  padding: 3px auto;
+  line-height: 20px;
+}
+
+#important-notice a {
+  color: #F25366;
+}
+
+#important-notice a:hover {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#notice-close-btn {
+  position: absolute;
+  right: 1em;
+}
+#notice-close-btn a {
+  color: #fff;
+}
+#notice-close-btn a:hover {
+  color: #F25366;
+}

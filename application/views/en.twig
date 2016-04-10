@@ -40,14 +40,13 @@
 
 <body>
 
-  <!-- Preloader -->
-    <div id="preloader" style="display: none">
-      <div class="loader"></div>
-    </div><!--preloader end-->
-
+    <div id="important-notice">
+      <p>Hey there! I have an important news... Click <a class="smoothscroll" href="#the-important-news-is" title="Go to the important news">here</a> to read it.<span id="notice-close-btn"><a href="#">x</a></span></p>
+    </div>
    <!-- Header
    ================================================== -->
    <header id="home">
+
 
       <nav id="m-nav">
 
@@ -652,6 +651,23 @@
 
 
       </div> <!-- Row ends-->
+      <div class="row section-head" id="the-important-news-is">
+        <div class="twelve columns">
+          <h1 class="section-title wow fadeInDown">The important news</h1>
+        </div>
+      </div> <!-- Section head -->
+      <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <div class="eight columns">
+          <p class="lead">
+            Recently I've changed my mobile number cause I moved to Berlin.
+          </p>
+          <p>
+            If you have written me via WhatsApp or any other means linked with my Italian number (prefix +39) your messages have probably missed me. My new German mobile number is <a href="tel:+491748967494">+49 174 8967494</a>. Please add it to your contacts. For your convenience you can tap <a href="{{assets}}/files/Matteo-Merola.vcf" title="Download my contact">here</a> to download my contacts information directly on your device.
+          </p>
+        </div>
+        <div class="two columns">&nbsp;</div>
+      </div>
 
 <div class="row section-head">
           <div class="twelve columns">
@@ -732,8 +748,8 @@
 
 </script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-   <script src="http://maps.google.com/maps/api/js"></script>
+   <script src="{{js}}/jquery.min.js"></script>
+   <script src="{{js}}/maps.js"></script>
    <script src="{{js}}/gmaps.js"></script>
    <script src="{{assets}}/owl-carousel/owl.carousel.min.js"></script>
    <script src="{{js}}/waypoints.js"></script>

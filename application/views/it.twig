@@ -39,7 +39,9 @@
 </head>
 
 <body>
-
+  <div id="important-notice">
+    <p>Hey tu! Ho una notizia importante... Clicca <a class="smoothscroll" href="#la-notizia-importante" title="Vai alla notizia importante">qui</a> per leggerla.<span id="notice-close-btn"><a href="#">x</a></span></p>
+  </div>
   <!-- Preloader -->
     <div id="preloader" style="display: none">
       <div class="loader"></div>
@@ -566,6 +568,7 @@
           <div class="twelve columns">
               <h1 class="section-title wow fadeInDown">Contattami</h1>
               <p class="lead">Vivo e lavoro a Berlino, per quanto i tedeschi siano molto simpatici, spesso mi annoio e per questo se ti trovi da queste parti contattami, scambiamo due chiacchiere davanti ad una birra offerta da me ;-) Puoi trovarmi con più facilità sul web (ma non avrai la birra omaggio).</p>
+              <p class="text-center">Di recente ho cambiato numero di cellulare, aggiornati <a class="smoothscroll" href="#la-notizia-importante">qui</a>.</p>
           </div>
       </div> <!-- Section head -->
 
@@ -621,7 +624,23 @@
 
 
       </div> <!-- Row ends-->
-
+      <div class="row section-head" id="la-notizia-importante">
+        <div class="twelve columns">
+          <h1 class="section-title wow fadeInDown">La notizia importante</h1>
+        </div>
+      </div> <!-- Section head -->
+      <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <div class="eight columns">
+          <p class="lead">
+            Di recente ho cambiato il mio numero di cellulare perché mi sono trasferito a Berlino.
+          </p>
+          <p>
+            Se mi hai scritto su WhatsApp o su qualsiasi altro social collegato al mio numero italiano (prefisso +39) probabilmente i tuoi messaggi non mi sono arrivati. Non è che sono maleducato e non ti ho risposto, è che non li ho proprio ricevuti!. Il mio nuovo numero tedesco è <a href="tel:+491748967494">+49 174 8967494</a>. Aggiungilo ai tuoi contatti in rubrica. Per la tua comodità puoi tappare <a href="{{assets}}/files/Matteo-Merola.vcf" title="Download my contact">qui</a> per scaricarlo direttamente sul tuo dispositivo.
+          </p>
+        </div>
+        <div class="two columns">&nbsp;</div>
+      </div>
 <div class="row section-head">
           <div class="twelve columns">
               <h1 class="section-title wow fadeInDown">Qualcosa di me...</h1>
@@ -702,8 +721,8 @@
 
 </script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-   <script src="http://maps.google.com/maps/api/js"></script>
+   <script src="{{js}}/jquery.min.js"></script>
+   <script src="{{js}}/maps.js"></script>
    <script src="{{js}}/gmaps.js"></script>
    <script src="{{assets}}/owl-carousel/owl.carousel.min.js"></script>
    <script src="{{js}}/waypoints.js"></script>
